@@ -1,0 +1,11 @@
+<html>
+    <body>
+        <h1>Enrollemnts</h1>
+
+        {% if results %}
+            {% for data in results %}
+                <p>{{ data.name }}</p>
+            {% endfor %}
+        {% endif %}
+    </body>
+</html>

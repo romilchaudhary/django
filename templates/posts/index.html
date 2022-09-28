@@ -1,0 +1,12 @@
+<html>
+
+<body>
+    <div class="container">
+        {% for product in results %}
+        <a href={% url "product" product.id %}>{{product.title}}</a>
+        <p><img src={{product.image_url}} height="100px" /></p>
+        {% endfor %}
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+
+{% load custom_tag %}
+<html> 
+
+<body>
+    <div>
+        <p>{{ product.title| title}}</p>
+        <img src={{product.image_url}} height="100px"/>
+        <p>{{ product.price| custom_currency}}</p>
+        <p>{{ product.description|safe}}</p>
+        {% for recently_viewed in recently_viewed %}
+            <img src={{recently_viewed.image_url}} height="100px"/>
+        {% endfor %}
+    </div>
+</body>
+
+</html>

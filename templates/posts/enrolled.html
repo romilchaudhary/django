@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <h1>Enrolled</h1>
+        {% if results %}
+            {% for data in results %}
+                <p>Emrollment: {{ data.name }}</p>
+                <p>Student: {{ data.student.name }}</p>
+                <p>Course: {{ data.course.name }}</p>
+            {% endfor %}
+        {% endif %}
+    </body>
+</html>

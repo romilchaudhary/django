@@ -1,0 +1,6 @@
+1. shared component
+2. pure components
+3. redux(dispatch, actions)
+4. context api
+5. unit testing
+6. react query => Redux and react-query are 2 very different things: react-query is used for data synchronization, Redux is a global state manager. react-query is used to keep synch all your apps to the same db, Redux is used to share a part of the app state to all the components that need to read that state

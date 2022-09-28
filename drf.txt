@@ -1,0 +1,2 @@
+https://stackoverflow.com/questions/61472455/django-rest-framework-return-user-profile-along-with-api-token-after-login-or-re
+https://stackoverflow.com/questions/61472455/django-rest-framework-return-user-profile-along-with-api-token-after-login-or-re/61472780#61472780

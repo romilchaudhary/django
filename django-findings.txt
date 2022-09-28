@@ -1,0 +1,33 @@
+https://www.devhandbook.com/django/user-profile/
+
+https://www.youtube.com/watch?v=YIJI5U0BWr0
+
+https://www.youtube.com/watch?v=-HuTlmEVOgU
+
+https://www.youtube.com/watch?v=HshbjK1vDtY
+
+https://www.youtube.com/watch?v=TzgZBg7oXNA
+
+https://www.youtube.com/watch?v=zhejsCxIVro
+
+https://www.youtube.com/watch?v=N-R5mT-nIDk
+
+multiple databases: https://www.youtube.com/watch?v=z5e_8FgKZig
+
+1. order.objects.select_related('customer').all() -> select_related works on foreignkey('customer') only and creates a inner join in single query.
+2. order.objects.prefetch_related('product').all() -> prefetch_related works on manytomany relationship and creates multiple queries and join will be at python side
+	--> IN(ids) will be passed so this might be slow sometimes
+
+3. F()-> used to find the value of column & Q() -> used to make queries in better way(by default we have only and relation in query, by using Q() we ca aslo create OR(|) relation)
+4. manytomanyfield creates a third table with primary keys from both the tables
+
+5. request.session.modified = True (in case to sequences we have to pass true so that inner values will update)
+6. sessions:  https://www.youtube.com/watch?v=sl7tSwgD0Yk
+
+7. template tags and filters => https://www.youtube.com/watch?v=9dryekIFiSw
+
+8. annotate & aggregate  => group by
+
+9. auth
+
+10. many to many and foreignkey , onotoonefield

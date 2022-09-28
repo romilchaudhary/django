@@ -1,0 +1,4 @@
+1. permissions aat user level -> Role-based Authorization
+from flask_user import roles_required
+
+2. python namespaces

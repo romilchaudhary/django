@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <h1>All Posts</h1>
+        {% for post in all_posts %}
+            <h3>{{ post.title }}</h3>
+            <p>By: {{ post.author }}</p>
+            <p>{{ post.comment }}</p>
+            <p>{{ post.created }}</p>
+        {% endfor %}
+
+        <h1>Small Comments Posts</h1>
+        {% if small_comments %}
+            {% for small_comments_post in small_comments %}
+                <h3>{{small_comments_post.title}}</h3>
+                <p>By: {{ small_comments_post.author }}</p>
+                <p>{{ small_comments_post.comment }}</p>
+            {% endfor %}
+        {% else %}
+            <h3>No Small Comments Posts</h3>
+        {% endif %}
+
+        <h1>Greater Comments</h1>
+        {% if greater_comments %}
+            {% for greater_comments in greater_comments %}
+                <h3>{{ greater_comments.title }}</h3>
+                <p>By: {{ greater_comments.author}}</p>
+                <p>{{ greater_comments.comment}}</p>
+            {% endfor %}
+        {% else %}
+            <p>No Greater Comments Found.</p>
+        {% endif %}
+    </body>
+</html>
